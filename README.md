@@ -24,7 +24,7 @@ Phiên bản này không phải là một bản crack hoàn chỉnh và sẽ đ�
 
 ## hướng dẫn đầy đủ
 
-[doc.sprov.xyz](https://doc.sprov.xyz/)
+[AikoCute.tk](https://aikocute.tk/)
 
 ## Cài đặt đơn giản
 
