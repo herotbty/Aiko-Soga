@@ -32,7 +32,7 @@ Phiên bản này không phải là một bản crack hoàn chỉnh và sẽ đ�
 sudo bash < <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crack/master/install.sh)
 ```
 
-## Cài đặt Docker
+## Cài đặt Docker < Không bắt buộc >
 
 ```
 # kéo hình ảnh (AikoCuteHotme)
