@@ -84,7 +84,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/RManLuo/crack-soga-v2ray/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/cocoyunxyz/crack-soga/main/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -108,7 +108,7 @@ update() {
 #        fi
 #        return 0
 #    fi
-    bash <(curl -Ls https://raw.githubusercontent.com/RManLuo/crack-soga-v2ray/master/install.sh) $version
+    bash <(curl -Ls https://raw.githubusercontent.com/cocoyunxyz/crack-soga/main/install.sh) $version
     if [[ $? == 0 ]]; then
         echo -e "${green}Cập nhật hoàn tất, soga đã được khởi động lại tự động, vui lòng sử dụng trạng thái soga để kiểm tra trạng thái khởi động${plain}"
         exit
@@ -235,7 +235,7 @@ show_log() {
 }
 
 install_bbr() {
-    bash <(curl -L -s https://github.com/sprov065/blog/raw/master/bbr.sh)
+    bash <(curl -L -s https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh)
     if [[ $? == 0 ]]; then
         echo ""
         echo -e "${green}Quá trình cài đặt bbr thành công, vui lòng khởi động lại máy chủ${plain}"
@@ -248,7 +248,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/soga -N --no-check-certificate https://github.com/RManLuo/crack-soga-v2ray/raw/master/soga.sh
+    wget -O /usr/bin/soga -N --no-check-certificate https://raw.githubusercontent.com/cocoyunxyz/crack-soga/main/soga.sh
     if [[ $? != 0 ]]; then
         echo ""
         echo -e "${red}Không tải được script xuống, vui lòng kiểm tra xem máy có thể kết nối với Github không${plain}"
@@ -330,7 +330,7 @@ show_enable_status() {
     if [[ $? == 0 ]]; then
         echo -e "Có tự động bắt đầu không: ${green}Có${plain}"
     else
-        echo -e "Có tự động bắt đầu không: ${red}không${plain}"
+        echo -e "Có tự động bắt đầu không: ${red}Không${plain}"
     fi
 }
 
