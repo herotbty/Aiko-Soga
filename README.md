@@ -20,7 +20,7 @@ Phiên bản này không phải là một bản crack hoàn chỉnh và sẽ đ�
 
 ## Bật bẻ khóa.
 
-Để kích hoạt phiên bản crack, bạn chỉ cần nhập AikoCuteHotMe tại soga_key, nếu để trống thì đó là phiên bản gốc.
+Để kích hoạt phiên bản crack, bạn chỉ cần nhập AikoCuteHotMe tại soga_key, nếu để trống hoặc sai Soga_key thì đó trở về phiên bản gốc.
 ```link Bash
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/soga/master/install.sh)
 ```
@@ -35,7 +35,7 @@ Link Gốc bản Free Giới hạn 88 Người và một mớ giới hạn khác
 sudo bash < <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crack/master/install.sh)
 ```
 
-## Cài đặt Docker < Không bắt buộc >
+## Cài đặt Docker
 
 ``` Docker
 # kéo hình ảnh (AikoCuteHotme)
