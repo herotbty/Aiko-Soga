@@ -20,8 +20,11 @@ Phiên bản này không phải là một bản crack hoàn chỉnh và sẽ đ�
 
 ## Bật bẻ khóa.
 
-Để kích hoạt phiên bản crack, bạn chỉ cần nhập AikoCuteHotMe tại soga_key, nếu để trống thì đó là phiên bản cộng đồng gốc.
-
+Để kích hoạt phiên bản crack, bạn chỉ cần nhập AikoCuteHotMe tại soga_key, nếu để trống thì đó là phiên bản gốc.
+```link Bash
+bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/soga/master/install.sh)
+```
+Link Gốc bản Free Giới hạn 88 Người và một mớ giới hạn khác 
 ## hướng dẫn đầy đủ
 
 [vaxilu Soga](https://soga.yougotme.cc/) < Tiếng Tàu Khựa >
