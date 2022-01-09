@@ -2,7 +2,7 @@
  Phiên bản crack của chương trình phụ trợ soga v2ray
 
 > Phiên bản đã crack có thể có nhiều rủi ro không xác định khác nhau. Vui lòng sử dụng nó sau khi nhận định của riêng bạn.
-# Phiên bản này là một phiên bản crack bẩn, bạn chỉ cần tìm hiểu để sử dụng nó một mình, xin vui lòng hỗ trợ phiên bản gốc
+# Phiên bản này là một phiên bản crack, bạn chỉ cần tìm hiểu để sử dụng nó một mình, xin vui lòng hỗ trợ phiên bản gốc
 
 [Soga backend là một backend hỗ trợ v2ray, Trojan và Shadowsocks cùng lúc. Phiên bản cộng đồng hỗ trợ tối đa 88 người dùng và tối ưu hóa việc sử dụng bộ nhớ dài hạn.](https://github.com/sprov065/soga)
 
