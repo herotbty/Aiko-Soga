@@ -36,9 +36,9 @@ sudo bash < <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crac
 
 ```
 # kéo hình ảnh (AikoCuteHotme)
-docker pull herotbty/Aiko-Soga-Crack
+docker pull rmanluo/crack-soga
 # Chạy hình ảnh, vui lòng tham khảo hướng dẫn riêng của soga để biết thông số. (AikoCutehotme)
-docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --network host herotbty/Aiko-Soga-Crack \
+docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --network host rmanluo/crack-soga \
 --type=v2board \
 --server_type=v2ray \
 --api=webapi \
