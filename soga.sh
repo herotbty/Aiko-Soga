@@ -8,7 +8,7 @@ plain='\033[0m'
 version="v1.0.0"
 
 # check root
-[[ $EUID -ne 0 ]] && echo -e "${red}Sai lầm: ${plain} Tập lệnh này phải được chạy với tư cách người dùng root!\n" && exit 1
+[[ $EUID -ne 0 ]] && echo -e "${red}Lỗi: ${plain} Tập lệnh này phải được chạy với tư cách người dùng root!\n" && exit 1
 
 # check os
 if [[ -f /etc/redhat-release ]]; then
@@ -55,7 +55,7 @@ fi
 
 confirm() {
     if [[ $# > 1 ]]; then
-        echo && read -p "$1 [vỡ nợ$2]: " temp
+        echo && read -p "$1 [Y$2]: " temp
         if [[ x"${temp}" == x"" ]]; then
             temp=$2
         fi
@@ -136,7 +136,7 @@ uninstall() {
     rm /usr/local/soga/ -rf
 
     echo ""
-    echo -e "Gỡ cài đặt thành công, nếu bạn muốn xóa tập lệnh này, hãy chạy sau khi thoát tập lệnh ${green}rm /usr/bin/soga -f${plain} xóa"
+    echo -e "Gỡ cài đặt thành công, nếu bạn muốn xóa tập lệnh này, hãy chạy sau khi thoát tập lệnh ${green}rm /usr/bin/soga -f${plain} Để Xoá hẳn Soga!"
     echo ""
 
     if [[ $# == 0 ]]; then
@@ -365,7 +365,7 @@ show_usage() {
 show_menu() {
     echo -e "
   ${green}kịch bản quản lý phụ trợ soga，${plain}${red}không hoạt động với docker${plain}
---- https://github.com/RManLuo/crack-soga-v2ray ---
+--- https://github.com/herotbty/Aiko-Soga-Crack ---
   ${green}0.${plain} tập lệnh thoát
 ————————————————
   ${green}1.${plain} cài đặt soga
