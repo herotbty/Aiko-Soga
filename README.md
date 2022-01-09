@@ -39,7 +39,7 @@ sudo bash < <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crac
 docker pull herotbty/Aiko-Soga-Crack
 # Chạy hình ảnh, vui lòng tham khảo hướng dẫn riêng của soga để biết thông số. (AikoCutehotme)
 docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --network host herotbty/Aiko-Soga-Crack \
---type=sspanel-uim \
+--type=v2board \
 --server_type=v2ray \
 --api=webapi \
 --webapi_url=https://webcuaban.com/ \
