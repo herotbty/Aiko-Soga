@@ -44,6 +44,6 @@ docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --netw
 --api=webapi \
 --webapi_url=https://aikocute.tk/ \
 --webapi_mukey=aikocutehotmeaikocutehotme \
---soga_key=cracked_by_Aiko \
+--soga_key=AikoCuteHotMe \
 --node_id=1
 ```
