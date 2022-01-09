@@ -1,5 +1,5 @@
-# crack-soga-v2ray
- A cracked version of soga v2ray backend
+# Aiko-Soga Crack
+ Phiên bản crack của chương trình phụ trợ soga v2ray
 
 > Phiên bản đã crack có thể có nhiều rủi ro không xác định khác nhau. Vui lòng sử dụng nó sau khi nhận định của riêng bạn.
 # Phiên bản này là một phiên bản crack bẩn, bạn chỉ cần tìm hiểu để sử dụng nó một mình, xin vui lòng hỗ trợ phiên bản gốc
