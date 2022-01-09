@@ -20,7 +20,7 @@ Phiên bản này không phải là một bản crack hoàn chỉnh và sẽ đ�
 
 ## Bật bẻ khóa.
 
-Để kích hoạt phiên bản crack, bạn chỉ cần nhập một ký tự bất kỳ tại soga_key, nếu để trống thì đó là phiên bản cộng đồng gốc.
+Để kích hoạt phiên bản crack, bạn chỉ cần nhập AikoCuteHotMe tại soga_key, nếu để trống thì đó là phiên bản cộng đồng gốc.
 
 ## hướng dẫn đầy đủ
 
