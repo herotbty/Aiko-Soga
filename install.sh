@@ -91,24 +91,24 @@ install_soga() {
     fi
 
     if  [ $# == 0 ] ;then
-        last_version=$(curl -Ls "https://api.github.com/repos/RManLuo/crack-soga-v2ray/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        last_version=$(curl -Ls "https://api.github.com/repos/cocoyunxyz/crack-soga/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
         if [[ ! -n "$last_version" ]]; then
             echo -e "${red}Không phát hiện được phiên bản soga, có thể đã vượt quá giới hạn API Github, vui lòng thử lại sau hoặc chỉ định phiên bản soga để cài đặt theo cách thủ công${plain}"
             exit 1
         fi
-        echo -e "soga phiên bản mới nhất được phát hiện：${last_version}，bắt đầu cài đặt"
-        wget -N --no-check-certificate -O /usr/local/soga.tar.gz https://github.com/RManLuo/crack-soga-v2ray/releases/download/${last_version}/soga-cracked-linux64.tar.gz
+        echo -e "Đã phát hiện phiên bản mới nhất của Soga:${last_version}，bắt đầu cài đặt"
+        wget -N --no-check-certificate -O /usr/local/soga.tar.gz https://github.com/cocoyunxyz/crack-soga/releases/download/${last_version}/soga-cracked-linux64.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}Không thể tải xuống soga, vui lòng đảm bảo máy chủ của bạn có thể tải xuống tệp Github${plain}"
             exit 1
         fi
     else
         last_version=$1
-        url="https://github.com/RManLuo/crack-soga-v2ray/releases/download/${last_version}/soga-cracked-linux64.tar.gz"
+        url="https://github.com/cocoyunxyz/crack-soga/releases/download/${last_version}/soga-cracked-linux64.tar.gz"
         echo -e "bắt đầu cài đặt soga v$1"
         wget -N --no-check-certificate -O /usr/local/soga.tar.gz ${url}
         if [[ $? -ne 0 ]]; then
-            echo -e "${red}Tải xuống soga v$1 không thành công, hãy đảm bảo rằng phiên bản này tồn tại${plain}"
+            echo -e "${red}tải soga v$1 không thành công, hãy đảm bảo rằng phiên bản này tồn tại${plain}"
             exit 1
         fi
     fi
@@ -123,11 +123,11 @@ install_soga() {
     systemctl daemon-reload
     systemctl stop soga
     systemctl enable soga
-    echo -e "${green}soga v${last_version}${plain} Quá trình cài đặt hoàn tất, nó đã được thiết lập để bắt đầu tự động"
+    echo -e "${green}soga v${last_version}${plain} 安装完成，已设置开机自启"
     if [[ ! -f /etc/soga/soga.conf ]]; then
         cp soga.conf /etc/soga/
         echo -e ""
-        echo -e "Cài đặt mới, vui lòng xem trước wiki hướng dẫn：https://github.com/sprov065/soga/wiki，Định cấu hình nội dung cần thiết"
+        echo -e "Để cài đặt mới, trước tiên hãy tham khảo hướng dẫn wiki:https://github.com/sprov065/soga/wiki，Định cấu hình nội dung cần thiết"
     else
         systemctl start soga
         sleep 2
@@ -136,7 +136,7 @@ install_soga() {
         if [[ $? == 0 ]]; then
             echo -e "${green}soga khởi động lại thành công${plain}"
         else
-            echo -e "${red}soga Có thể không bắt đầu，vui lòng sử dụng sau soga log Xem thông tin nhật ký，Nếu không thể bắt đầu，thì định dạng cấu hình có thể đã thay đổi, vui lòng vào wiki để kiểm tra：https://github.com/RManLuo/crack-soga-v2ray/wiki${plain}"
+            echo -e "${red}soga có thể không khởi động được, vui lòng sử dụng soga log để kiểm tra thông tin nhật ký sau, nếu không khởi động được, định dạng cấu hình có thể đã bị thay đổi, vui lòng vào wiki để kiểm tra:https://github.com/RManLuo/crack-soga-v2ray/wiki${plain}"
         fi
     fi
 
@@ -146,10 +146,10 @@ install_soga() {
     if [[ ! -f /etc/soga/dns.yml ]]; then
         cp dns.yml /etc/soga/
     fi
-    curl -o /usr/bin/soga -Ls https://raw.githubusercontent.com/RManLuo/crack-soga-v2ray/master/soga.sh
+    curl -o /usr/bin/soga -Ls https://raw.githubusercontent.com/cocoyunxyz/crack-soga/main/soga.sh
     chmod +x /usr/bin/soga
     echo -e ""
-    echo "soga Cách sử dụng tập lệnh quản lý: "
+    echo "Cách sử dụng tập lệnh quản lý soga : - Crack By Aiko"
     echo "------------------------------------------"
     echo "soga              - Hiển thị menu quản lý (nhiều chức năng hơn)"
     echo "soga start        - khởi động soga"
