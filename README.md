@@ -14,13 +14,17 @@
 
 # Hướng dẫn (gỡ bỏ Relase)
 
-gỡ bỏ Soga hoàn toàn :
+Gỡ bỏ Soga hoàn toàn : 
 ```
 soga uninstall
 ```
-Gỡ bỏ Relase conf của soga thì 
+Gỡ bỏ Relase conf của soga 
 ```
 rm /usr/bin/soga -f
+```
+Xem menu đầy đủ của Soga 
+```
+soga
 ```
 
 ## Các vấn đề đã biết
