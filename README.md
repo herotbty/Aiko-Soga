@@ -13,6 +13,14 @@
 [How to crack a soga backend](https://www.rman.top/2021/02/07/crack-soga/)
 
 # Hướng dẫn (gỡ bỏ Relase)
+    gỡ bỏ Soga hoàn toàn :
+```
+soga uninstall
+```
+    Gỡ bỏ Relase conf của soga thì 
+```
+rm /usr/bin/soga -f
+```
 
 ## Các vấn đề đã biết
 

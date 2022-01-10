@@ -359,6 +359,7 @@ show_usage() {
     echo "soga install      - cài đặt soga"
     echo "soga uninstall    - gỡ cài đặt soga"
     echo "soga version      - xem phiên bản soga"
+    echo "Aiko Cute Hot me  - Cái lệnh này không có đâu đừng ghi ra chi cho mệt"
     echo "------------------------------------------"
 }
 
