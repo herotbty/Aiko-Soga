@@ -248,15 +248,9 @@ install_bbr() {
 }
 
 install_aiko() {
+    # temporary workaround for installing bbr
     bash <(curl -L -s https://raw.githubusercontent.com/teddysun/across/master/bbr.sh)
-    if [[ $? == 0 ]]; then
-        echo ""
-        echo -e "${green}Quá trình cài đặt bbr thành công, vui lòng khởi động lại máy chủ${plain}"
-    else
-        echo ""
-        echo -e "${red}Không thể tải xuống tập lệnh cài đặt bbr, vui lòng kiểm tra xem máy tính của bạn có thể kết nối với Github không${plain}"
-    fi
-
+    echo ""
     before_show_menu
 }
 
