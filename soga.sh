@@ -254,6 +254,12 @@ install_aiko() {
     before_show_menu
 }
 
+install_bbr_X-ui() {
+    # temporary workaround for installing bbr
+    bash <(curl -L -s https://raw.githubusercontent.com/teddysun/across/master/bbr.sh)
+    echo ""
+    before_show_menu
+}
 
 update_shell() {
     wget -O /usr/bin/soga -N --no-check-certificate https://raw.githubusercontent.com/herotbty/Aiko-Soga/main/soga.sh
@@ -393,9 +399,11 @@ show_menu() {
  ${green}11.${plain} xem phiên bản soga
  ${green}12.${plain} Install BBR AikoCute
  ${green}13.${plain} Install Block Ads By Aiko
+ ${green}14.${plain} Install BBR Của X-ui < Bản Gốc >
+
  "
     show_status
-    echo && read -p "Vui lòng nhập một lựa chọn [0-13]: " num
+    echo && read -p "Vui lòng nhập một lựa chọn [0-14]: " num
 
     case "${num}" in
         0) exit 0
@@ -425,6 +433,8 @@ show_menu() {
         12) install_bbr
         ;;
         13) install_aiko
+        ;;
+        14) install_bbr_X-ui
         ;;
         *) echo -e "${red}Vui lòng nhập số chính xác [0-12]${plain}"
         ;;
