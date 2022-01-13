@@ -249,8 +249,8 @@ install_bbr() {
 
 install_aiko() {
     # temporary workaround for installing bbr
-    bash <(curl -L -s https://raw.githubusercontent.com/teddysun/across/master/bbr.sh)
-    echo ""
+    curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+    echo " Cài đặt Ads Block "
     before_show_menu
 }
 
@@ -390,9 +390,9 @@ show_menu() {
   ${green}9.${plain} Đặt soga để bắt đầu tự động
  ${green}10.${plain} Hủy tự động bắt đầu soga
 ————————————————
- ${green}11.${plain} Một cú nhấp chuột cài đặt bbr (hạt nhân mới nhất)
- ${green}12.${plain} xem phiên bản soga
- ${green}13.${plain} Install BBR AikoCuteHotMe 
+ ${green}11.${plain} xem phiên bản soga
+ ${green}12.${plain} Install BBR AikoCute
+ ${green}13.${plain} Install Block Ads By Aiko
  "
     show_status
     echo && read -p "Vui lòng nhập một lựa chọn [0-13]: " num
@@ -420,9 +420,9 @@ show_menu() {
         ;;
         10) check_install && disable
         ;;
-        11) install_bbr
+        11) check_install && show_soga_version
         ;;
-        12) check_install && show_soga_version
+        12) install_bbr
         ;;
         13) install_aiko
         ;;
