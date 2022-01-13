@@ -392,9 +392,10 @@ show_menu() {
 ————————————————
  ${green}11.${plain} Một cú nhấp chuột cài đặt bbr (hạt nhân mới nhất)
  ${green}12.${plain} xem phiên bản soga
+ ${green}13.${plain} Install BBR AikoCuteHotMe 
  "
     show_status
-    echo && read -p "Vui lòng nhập một lựa chọn [0-12]: " num
+    echo && read -p "Vui lòng nhập một lựa chọn [0-13]: " num
 
     case "${num}" in
         0) exit 0
