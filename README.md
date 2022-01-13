@@ -1,5 +1,8 @@
-# Aiko-Soga Crack
- Phiên bản crack của chương trình phụ trợ soga v2ray
+# Aiko-Soga Crack < Update and newfix>
+ add BBR trên soga < 9/1/2022> BBR thường , BBR plus ,BBR Lotserver . 
+ Fix adroid lỗi Pipe < 11/1/2022>
+ Cập nhật Adblock on Soga < 13/1/2022>
+ 
 
 > Phiên bản đã crack có thể có nhiều rủi ro không xác định khác nhau. Vui lòng sử dụng nó sau khi nhận định của riêng bạn.
 # Phiên bản này là một phiên bản crack, bạn chỉ cần tìm hiểu để sử dụng nó một mình, xin vui lòng hỗ trợ phiên bản gốc
@@ -42,7 +45,7 @@ Link Gốc bản Free Giới hạn 88 Người và một mớ giới hạn khác
 
 [vaxilu Soga](https://soga.yougotme.cc/) < Tiếng Tàu Khựa >
 
-## Cài đặt đơn giản
+## Cài đặt đơn giản < bản Aiko>
 
 ``` bash
 sudo bash < <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crack/master/install.sh)
@@ -79,5 +82,6 @@ docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --netw
 --soga_key=AikoCuteHotMe \
 --node_id=1
 ```
+
 
 
