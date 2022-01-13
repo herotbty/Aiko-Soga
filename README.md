@@ -1,4 +1,4 @@
-# Aiko-Soga Crack 
+# Aiko-Soga
 > Phiên bản đã crack có thể có nhiều rủi ro không xác định khác nhau. Vui lòng sử dụng nó sau khi nhận định của riêng bạn.
 
 # Update and newfix
