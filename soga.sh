@@ -84,7 +84,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crack/main/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga/aiko/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -108,7 +108,7 @@ update() {
 #        fi
 #        return 0
 #    fi
-    bash <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crack/main/install.sh) $version
+    bash <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga/main/install.sh) $version
     if [[ $? == 0 ]]; then
         echo -e "${green}Cập nhật hoàn tất, soga đã được khởi động lại tự động, vui lòng sử dụng trạng thái soga để kiểm tra trạng thái khởi động${plain}"
         exit
@@ -235,7 +235,7 @@ show_log() {
 }
 
 install_bbr() {
-    bash <(curl -L -s https://raw.githubusercontent.com/herotbty/Aiko-bbr-Crack/aiko/tcp.sh)
+    bash <(curl -L -s https://raw.githubusercontent.com/herotbty/Aiko-bbr-Crack/master/tcp.sh)
     if [[ $? == 0 ]]; then
         echo ""
         echo -e "${green}Quá trình cài đặt bbr thành công, vui lòng khởi động lại máy chủ${plain}"
@@ -256,7 +256,7 @@ install_aiko() {
 
 
 update_shell() {
-    wget -O /usr/bin/soga -N --no-check-certificate https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crack/main/soga.sh
+    wget -O /usr/bin/soga -N --no-check-certificate https://raw.githubusercontent.com/herotbty/Aiko-Soga/aiko/soga.sh
     if [[ $? != 0 ]]; then
         echo ""
         echo -e "${red}Không tải được script xuống, vui lòng kiểm tra xem máy có thể kết nối với Github không${plain}"
