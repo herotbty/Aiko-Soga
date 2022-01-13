@@ -8,7 +8,7 @@ plain='\033[0m'
 cur_dir=$(pwd)
 
 # check root
-[[ $EUID -ne 0 ]] && echo -e "${red}Sai lầm：${plain} Tập lệnh này phải được chạy với tư cách người dùng root!\n" && exit 1
+[[ $EUID -ne 0 ]] && echo -e "${red}Lỗi：${plain} Tập lệnh này phải được chạy với tư cách người dùng root!\n" && exit 1
 
 # check os
 if [[ -f /etc/redhat-release ]]; then
