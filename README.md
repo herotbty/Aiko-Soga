@@ -1,12 +1,6 @@
 # Aiko-Soga
 > Phiên bản đã crack có thể có nhiều rủi ro không xác định khác nhau. Vui lòng sử dụng nó sau khi nhận định của riêng bạn.
 
-# Update and newfix
- Add BBR trên soga < 9/1/2022> BBR thường , BBR plus ,BBR Lotserver . 
-
- Fix adroid lỗi Pipe < 11/1/2022>
-
- Cập nhật Adblock on Soga < 13/1/2022>
 
 # Phiên bản này là một phiên bản crack, bạn chỉ cần tìm hiểu để sử dụng nó một mình, xin vui lòng hỗ trợ phiên bản gốc
 
