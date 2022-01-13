@@ -247,6 +247,20 @@ install_bbr() {
     before_show_menu
 }
 
+install_aiko() {
+    bash <(curl -L -s https://raw.githubusercontent.com/teddysun/across/master/bbr.sh)
+    if [[ $? == 0 ]]; then
+        echo ""
+        echo -e "${green}Quá trình cài đặt bbr thành công, vui lòng khởi động lại máy chủ${plain}"
+    else
+        echo ""
+        echo -e "${red}Không thể tải xuống tập lệnh cài đặt bbr, vui lòng kiểm tra xem máy tính của bạn có thể kết nối với Github không${plain}"
+    fi
+
+    before_show_menu
+}
+
+
 update_shell() {
     wget -O /usr/bin/soga -N --no-check-certificate https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crack/main/soga.sh
     if [[ $? != 0 ]]; then
@@ -414,6 +428,8 @@ show_menu() {
         11) install_bbr
         ;;
         12) check_install && show_soga_version
+        ;;
+        13) install_aiko
         ;;
         *) echo -e "${red}Vui lòng nhập số chính xác [0-12]${plain}"
         ;;
