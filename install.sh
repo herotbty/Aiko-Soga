@@ -146,7 +146,7 @@ install_soga() {
     if [[ ! -f /etc/soga/dns.yml ]]; then
         cp dns.yml /etc/soga/
     fi
-    curl -o /usr/bin/soga -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga/aiko/soga.sh
+    curl -o /usr/bin/soga -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga/Aiko/soga.sh
     chmod +x /usr/bin/soga
     echo -e ""
     echo "Cách sử dụng tập lệnh quản lý soga : - Crack By Aiko"
