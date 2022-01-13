@@ -91,20 +91,20 @@ install_soga() {
     fi
 
     if  [ $# == 0 ] ;then
-        last_version=$(curl -Ls "https://api.github.com/repos/herotbty/Aiko-Soga-Crack/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        last_version=$(curl -Ls "https://api.github.com/repos/herotbty/Aiko-Soga/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
         if [[ ! -n "$last_version" ]]; then
             echo -e "${red}Không phát hiện được phiên bản soga, có thể đã vượt quá giới hạn API Github, vui lòng thử lại sau hoặc chỉ định phiên bản soga để cài đặt theo cách thủ công${plain}"
             exit 1
         fi
         echo -e "Đã phát hiện phiên bản mới nhất của Soga:${last_version}，bắt đầu cài đặt"
-        wget -N --no-check-certificate -O /usr/local/soga.tar.gz https://github.com/herotbty/Aiko-Soga-Crack/releases/download/${last_version}/soga-cracked-linux64.tar.gz
+        wget -N --no-check-certificate -O /usr/local/soga.tar.gz https://github.com/herotbty/Aiko-Soga/releases/download/${last_version}/soga-cracked-linux64.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}Không thể tải xuống soga, vui lòng đảm bảo máy chủ của bạn có thể tải xuống tệp Github${plain}"
             exit 1
         fi
     else
         last_version=$1
-        url="https://github.com/herotbty/Aiko-Soga-Crack/releases/download/${last_version}/soga-cracked-linux64.tar.gz"
+        url="https://github.com/herotbty/Aiko-Soga/releases/download/${last_version}/soga-cracked-linux64.tar.gz"
         echo -e "bắt đầu cài đặt soga v$1"
         wget -N --no-check-certificate -O /usr/local/soga.tar.gz ${url}
         if [[ $? -ne 0 ]]; then
@@ -146,7 +146,7 @@ install_soga() {
     if [[ ! -f /etc/soga/dns.yml ]]; then
         cp dns.yml /etc/soga/
     fi
-    curl -o /usr/bin/soga -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga-Crack/main/soga.sh
+    curl -o /usr/bin/soga -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga/main/soga.sh
     chmod +x /usr/bin/soga
     echo -e ""
     echo "Cách sử dụng tập lệnh quản lý soga : - Crack By Aiko"
