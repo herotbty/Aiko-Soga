@@ -48,37 +48,4 @@ Link Gốc bản Free Giới hạn 88 Người và một mớ giới hạn khác
 sudo bash < <(curl -Ls https://raw.githubusercontent.com/herotbty/Aiko-Soga/master/install.sh)
 ```
 
-## Cài đặt Docker
-
-# V2Board
-``` Docker
-# kéo hình ảnh (AikoCuteHotme)
-docker pull rmanluo/crack-soga
-# Chạy hình ảnh, vui lòng tham khảo hướng dẫn riêng của soga để biết thông số. (AikoCutehotme)
-docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --network host rmanluo/crack-soga \
---type=v2board \
---server_type=v2ray \
---api=webapi \
---webapi_url=https://webcuaban.com/ \
---webapi_mukey=aikocutehotmeaikocutehotme \
---soga_key=AikoCuteHotMe \
---node_id=1
-```
-
-# SSpanel
-``` Docker
-# kéo hình ảnh (AikoCuteHotme)
-docker pull rmanluo/crack-soga
-# Chạy hình ảnh, vui lòng tham khảo hướng dẫn riêng của soga để biết thông số. (AikoCutehotme)
-docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --network host rmanluo/crack-soga \
---type=sspanel-uim \
---server_type=v2ray \
---api=webapi \
---webapi_url=https://webcuaban.com/ \
---webapi_mukey=aikocutehotmeaikocutehotme \
---soga_key=AikoCuteHotMe \
---node_id=1
-```
-
-
 
